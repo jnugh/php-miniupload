@@ -9,10 +9,10 @@
     }
     
     private function _generatePath($file){
-      return '../tpl/' . $this->_path . '/' . $file . '.php';
+      return 'tpl/' . $this->_path . '/' . $file . '.php';
     }
     
     public function render(){
-      include(_generatePath($this->_file));
+      include($this->_generatePath($this->_file));
     }
   }
