@@ -3,7 +3,7 @@
     private $_path = TPL;
     
     public function __construct($file){
-      if(!file_exists($this->_generatePath($file))
+      if(!file_exists($this->_generatePath($file)))
         throw new Exception('Template not found!');
       $this->_file = $file;
     }
