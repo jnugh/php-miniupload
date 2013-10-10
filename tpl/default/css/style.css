@@ -1,0 +1,18 @@
+label {
+  float: left;
+  line-height: 30px;
+  width: 100px;
+}
+
+input.login {
+  width: 220px;
+}
+
+input.loginbtn {
+  width: 335px;
+}
+#content{
+  margin-left: 30px;
+  margin-right: 30px;
+  display: table;
+}
