@@ -1,1 +1,6 @@
 *~
+files/*
+.buildpath
+.project
+.metadata
+.settings
