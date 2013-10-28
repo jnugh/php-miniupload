@@ -27,7 +27,7 @@ $id = sha1($startdir.time());
 $_SESSION['fileIDs'][$id] = $startdir;
 $files = array('id' => $id, 'files' => array());
 while($file = readdir($dir)){
-	if($file == '.' || $file == '..')
+	if(substr_compare($file, '.', 0, 1) == 0)
 		continue;
 	$path = $startdir . '/' . $file;
 	$isDir = is_dir($path);
